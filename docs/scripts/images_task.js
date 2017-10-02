@@ -2,6 +2,7 @@ var numClicks = null;
 var elementHistory = [];
 
 $(document).ready(function() {
+	console.log("HELLO THERE")
 	$("#theimage").click(function(e) {
 		numClicks++;
 		$("#numpeoplefield").val(numClicks);
@@ -26,7 +27,7 @@ $(document).ready(function() {
 		var imgheight=$("#theimage").height;
 		if (imgheight<1000) {
 			imgheight+=200;
-			$("#theimage").height.(imgheight);
+			$("#theimage").height(imgheight);
 		}
 	});
 
