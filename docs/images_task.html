@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/externalHIT_v1.js"></script>
+	<script src="scripts/images_task.js"></script>
+	<link rel="stylesheet" href="images_task.css">
+	<title>CountingPeople</title>
+	<h1>Welcome to CountingPeople!</h1>
+</head>
+<body>
+	<form name="mturk_form" id="mturk_form">
+		<input type="hidden" value="" name="assignmentID" id="assignmentID">
+		<h3>For this task you are going to be looking at images and determining the number of people in those images</h3>
+		<h3>First, you should know who to include in your count: </h3>
+			<h4>If at least half of the head, from <em>any</em> angle, is contained within the rectangle of the image, then include that person in your count. Do <em>not</em> include people <em>without</em> any part of their head showing </h4>
+			<h4>For example, this man <em>would</em> be included in the count, because his head is more than half visible</h4>
+		<img id="goodexample" src="pics/example_photo_goodman.png" width="500"> <br> <br>
+		<h4>But this man would <em>not</em> be included in the count, because his head is more than half cut off</h4>
+		<img id="badexample" src="pics/example_photo_badman.png" width="500">
+		<h4>Click on the person's head to count them. A red dot will appear and the counter below the image will increase. <br> To undo your count, click the "Undo" button next to the image</h4>
+		<br>
+		<br>
+		<img id="theimage" src="pics/people_1.jpg" height="400"> 
+		<br>
+		<input type="hidden" name="numpeoplefield" id="numpeoplefield">
+		<input type="hidden" name="history" id="history">
+		<p>
+			Number of people: <span id="numpeople">0</span> <span> <input type="button" value="Undo" id="undobutton"></span>
+		</p>
+		<p>	<input type="button" value="Increase Size" id="increasesizebutton"><input type="button" value="Decrease Size" id="decreasesizebutton"></p>
+		<br>
+		<input type="button" value="Submit HIT" id="submitbutton"></ins>
+	<form>
+</body>
+</html>
