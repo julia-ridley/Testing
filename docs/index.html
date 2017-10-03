@@ -11,6 +11,8 @@
 <body>
 	<form name="mturk_form" id="mturk_form">
 			<input type="hidden" value="" name="assignmentID" id="assignmentID">
+			<input type="hidden" value=[] name="numpeoplefield" id="numpeoplefield">
+			<input type="hidden" value=[] name="timetaken" id="timetaken">
 		<h3>For this task you are going to be looking at images and determining the number of people in those images</h3>
 		<h3>First, you should know who to include in your count: </h3>
 			<h4>If at least half of the head, from <em>any</em> angle, is contained within the rectangle of the image, then include that person in your count. Do <em>not</em> include people <em>without</em> any part of their head showing </h4>
@@ -23,64 +25,58 @@
 		<hr>
 <!-- 1st image -->
 		<h3>Please count the people in the following images</h3>
-			<img id="people_1" src="pics/people_1.jpg" height="400"> 
+			<img id="people_1" src="pics/people_1.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield1" id="numpeoplefield1">
-			<input type="hidden" name="history1" id="history1">
+			<input type="hidden" name="timetaken1" id="timetaken1">
 		<p>
 			Number of people: <span id="peoplecount1">0</span> <span> <input type="button" value="Undo" id="undobutton1"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton1"><input type="button" value="Decrease Size" id="decreasesizebutton1"></p>
 		<br>
 <!-- 2nd image -->
-			<img id="people_2" src="pics/people_2.jpg" height="400"> 
+			<img id="people_2" src="pics/people_2.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield2" id="numpeoplefield2">
-			<input type="hidden" name="history2" id="history2">
+			<input type="hidden" name="timetaken2" id="timetaken2">
 		<p>
 			Number of people: <span id="peoplecount2">0</span> <span> <input type="button" value="Undo" id="undobutton2"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton2"><input type="button" value="Decrease Size" id="decreasesizebutton2"></p>
 		<br>
 <!-- 3rd image -->
-			<img id="people_3" src="pics/people_3.jpg" height="400"> 
+			<img id="people_3" src="pics/people_3.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield3" id="numpeoplefield3">
-			<input type="hidden" name="history3" id="history3">
+			<input type="hidden" name="timetaken3" id="timetaken3">
 		<p>
 			Number of people: <span id="peoplecount3">0</span> <span> <input type="button" value="Undo" id="undobutton3"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton3"><input type="button" value="Decrease Size" id="decreasesizebutton3"></p>
 		<br>
 <!-- 4th image -->
-			<img id="people_4" src="pics/people_4.jpg" height="400"> 
+			<img id="people_4" src="pics/people_4.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield4" id="numpeoplefield4">
-			<input type="hidden" name="history4" id="history4">
+			<input type="hidden" name="timetaken4" id="timetaken4">
 		<p>
 			Number of people: <span id="peoplecount4">0</span> <span> <input type="button" value="Undo" id="undobutton4"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton4"><input type="button" value="Decrease Size" id="decreasesizebutton4"></p>
 		<br>
 <!-- 5th image -->	
-			<img id="people_5" src="pics/people_5.jpg" height="400"> 
+			<img id="people_5" src="pics/people_5.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield5" id="numpeoplefield5">
-			<input type="hidden" name="history5" id="history5">
+			<input type="hidden" name="timetaken5" id="timetaken5">
 		<p>
 			Number of people: <span id="peoplecount5">0</span> <span> <input type="button" value="Undo" id="undobutton5"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton5"><input type="button" value="Decrease Size" id="decreasesizebutton5"></p>
 		<br>
 <!-- 6th image -->	
-			<img id="people_6" src="pics/people_6.jpg" height="400"> 
+			<img id="people_6" src="pics/people_6.jpg" width="500"> 
 		<br>
 			<input type="hidden" name="numpeoplefield6" id="numpeoplefield6">
-			<input type="hidden" name="history6" id="history6">
+			<input type="hidden" name="timetaken6" id="timetaken6">
 		<p>
 			Number of people: <span id="peoplecount6">0</span> <span> <input type="button" value="Undo" id="undobutton6"></span>
 		</p>
-		<p>	<input type="button" value="Increase Size" id="increasesizebutton6"><input type="button" value="Decrease Size" id="decreasesizebutton6"></p>
 		<br>
   	Please leave any comments about your HIT experience below:<br>
   	<textarea rows="5" cols="100"></textarea> <br>
